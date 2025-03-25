@@ -1,4 +1,5 @@
 # Selected Honors Awarded
+- Best Thesis Award, National Electrical Engineering Association (2025). 
 - Excellent Graduate, Zhejiang Province (2024). 
 - Chu Kochen Presidential Scholarship (2023), highest honor at Zhejiang University
 - ByteDance Scholar Fellowship (100k RMB Bonus), 10 students per year

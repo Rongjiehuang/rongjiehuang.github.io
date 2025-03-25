@@ -23,7 +23,11 @@ In 2024, I lead or participate in the following research topics:
 
 <div class="scrollable">
   <ul>
-    <li><strong>2024.05</strong>: 6 papers are accepted by ACL 2024! (main conference and findings)! Thanks to my co-authors! </li>
+    <li><strong>2025.04</strong>: <font color="red"> I am awarded the Best Thesis Award by the Electrical Engineering Association! </font></li>
+    <li><strong>2025.02</strong>: 4 papers are accepted by ICLR 2025! </li>
+    <li><strong>2025.01</strong>: 1 paper is accepted by AAAI 2025!  </li>
+    <li><strong>2024.10</strong>: 6 papers are accepted by NeurIPS 2024! </li>
+    <li><strong>2024.05</strong>: 6 papers are accepted by ACL 2024! (main conference and findings)! </li>
     <li><strong>2024.05</strong>: 3 papers are accepted by ICML 2024!</li>
     <li><strong>2024.03</strong>: 1 paper is accepted by NAACL 2024 main conference!</li>
     <li><strong>2024.01</strong>: 1 paper is accepted by ICLR 2024!</li>
