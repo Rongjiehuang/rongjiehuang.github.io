@@ -12,13 +12,18 @@
 - Self-Supervised Learning: **Prosody-MAE (ACL 2023)**
 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/make-an-audio-arch.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/seamless.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 - [Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset.](https://ai.meta.com/research/publications/seamless-interaction-dyadic-audiovisual-motion-modeling-and-large-scale-dataset/)
  <!-- **Rongjie Huang**, Mingze Li, Dongchao Yang, Jiatong Shi, Xuankai Chang, Zhenhui Ye, Yuning Wu, Zhiqing Hong, Jiawei Huang, Jinglin Liu, Yi Ren, Zhou Zhao, Shinji Watanabe. **AAAI, 2025** -->
 
 - **Academic / Industry Impact**: Our work are promoted by different media and forums, such as [Meta AI](https://ai.meta.com/blog/seamless-interaction-natural-conversational-dynamics/), [Linkedin](https://www.linkedin.com/posts/aiatmeta_today-the-meta-fair-team-is-introducing-activity-7344402971469729793-kg5s?utm_source=share&utm_medium=member_desktop&rcm=ACoAADGDrcoBfoMPrq_7hHP3yV8yEEJ24xfBDWg), and [Twitter](https://x.com/AIatMeta/status/1938641490512851290). We have code released at [![](https://img.shields.io/github/stars/facebookresearch/seamless_interaction?style=social&label=Code+Stars)](https://github.com/facebookresearch/seamless_interaction) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/datasets/facebook/seamless-interaction).
+
+
+
+</div>
+</div>
 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/make-an-audio-arch.png' alt="sym" width="100%"></div></div>
