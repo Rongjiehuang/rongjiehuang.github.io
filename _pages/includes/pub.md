@@ -1,16 +1,18 @@
 
 # 📝 Representative Publications 
 ## Multi-modal Large Language Model
-- **Speech Pre-training** [InstructSpeech (ICML, 2024), UniAudio (ICML, 2024)]
-- Joint understanding and generation [AVLM (Technical Report, 2025), AudioGPT (AAAI, 2024)]
-- Efficient Post-training [MVoice (ACL, 2024), VoiceTuner (ACM-MM, 2024)]
+- **Speech Pre-training**: InstructSpeech (ICML, 2024), UniAudio (ICML, 2024)
+- **Joint understanding and generation**: AVLM (Technical Report, 2025), AudioGPT (AAAI, 2024)
+- **Efficient Post-training**: MVoice (ACL, 2024), VoiceTuner (ACM-MM, 2024)
+
 ## Omini Audio Generative Models
-- Video-to-Audio Generation [Lumina-T2X (ICLR 2025), Make-An-Audio (ICML 2023)]
-- Speech Generation [GenerSpeech (NeurIPS, 2022), FastDiff (IJCAI, 2022), ProDiff (ACM-MM, 2022), FastDiff 2 (ACL, 2023)]
-- Music Generation [SingGAN (ACM-MM, 2022), Multi-Singer (ACM-MM, 2021)].
+- **Video-to-Audio Generation**: Lumina-T2X (ICLR 2025), Make-An-Audio (ICML 2023)
+- **Speech Generation**: GenerSpeech (NeurIPS, 2022), FastDiff (IJCAI, 2022), ProDiff (ACM-MM, 2022), FastDiff 2 (ACL, 2023)
+- **Music Generation**: SingGAN (ACM-MM, 2022), Multi-Singer (ACM-MM, 2021)
+
 ## Audio-Visual Language Processing
-- Speech Translation [TranSpeech (ICLR, 2023), AV-TranSpeech (ACL, 2023)]
-- Self-Supervised Learning [Prosody-MAE (ACL, 2023)].
+- **Speech Translation**: TranSpeech (ICLR, 2023), AV-TranSpeech (ACL, 2023)
+- **Self-Supervised Learning**: Prosody-MAE (ACL, 2023)
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Technical Report 2025</div><img src='images/seamless.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
