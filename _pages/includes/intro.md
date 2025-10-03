@@ -1,15 +1,14 @@
 **Rongjie Huang (黄融杰)** is the final year's graduate student at College of Computer Science and Software, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by [Prof. Zhou Zhao](https://person.zju.edu.cn/zhaozhou). I also obtained Bachelor’s degree at Zhejiang University. During my graduate study, I was lucky to collaborate with the CMU Speech Team led by [Prof. Shinji Watanabe](https://scholar.google.com/citations?user=U5xRA6QAAAAJ), and Audio Research Team at Zhejiang University. I was grateful to intern or collaborate at TikTok, Shanghai AI Lab, Tencent Seattle Lab, Alibaba Qwen, with [Yi Ren](https://github.com/RayeRen), [Jinglin Liu](https://github.com/MoonInTheRiver), [Chunlei Zhang](https://scholar.google.com/citations?user=NCKZGb0AAAAJ) and [Dong Yu](https://scholar.google.com/citations?user=tMY31_gAAAAJ).
 
-My research interest includes **Multi-Modal Generative AI, Multi-Modal Language Processing, and AI4Science**. I have published **first-author papers** at the top international AI conferences such as **NeurIPS/ICLR/ICML/ACL/IJCAI**. I developed a few well-known Speech/NLP algorithms including:
-- AudioGPT, UniAudio, Make-A-Voice: Multitask, Multilingual LLMs
-- Make-An-Audio, GenerSpeech: Zero-shot text-guided synthesis
-- FastDiff 1/2, ProDiff: AIGC diffusion models
+My research interest includes **Multi-modal Large Language Model, Video-Audio Joint Generative Models, and Audio-Visual Language Processing**. I have published **first-author papers** at the top international AI conferences such as **NeurIPS/ICLR/ICML/ACL/IJCAI**. I developed a few well-known Speech/NLP algorithms including:
+- Seamless-Interaction, AudioGPT, UniAudio, Make-A-Voice: Multimodal, Multilingual LLMs
+- Make-An-Audio, FastDiff, GenerSpeech: Omini-modal Audio Generative Models
 - TranSpeech, and AV-TranSpeech: Multimodal Translation
 
-In 2024, I lead or participate in the following research topics:
+<!-- In 2024, I lead or participate in the following research topics:
 - Speech/NLP: multimodal generation and translation
 - Large Language Models (LLMs): Audio/Visual
-- Diffusion models: Image/Audio/3D
+- Diffusion models: Image/Audio/3D -->
 
 
 # 🔥 News

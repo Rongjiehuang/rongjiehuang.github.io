@@ -1,16 +1,16 @@
 
 # 📝 Representative Publications 
-## Multi-modal Generative AI
-- Spoken Large Language Model: **InstructSpeech (ICML 2024)**, **UniAudio (ICML 2024)**, **AudioGPT (AAAI demo 2024)**, **Make-A-Voice (ACL 2024)**, **HiFi-Codec**
-- Text-to-Audio Synthesis: **Make-An-Audio (ICML 2023)**
-- Text-to-Speech Synthesis: **GenerSpeech (NeurIPS 2022)** for zero-shot text-to-speech, **FastDiff (IJCAI 2022) / ProDiff (ACM-MM 2022a)** for diffusion text-to-speech
-- Singing Voice Synthesis: **SingGAN (ACM-MM 2022b) / Multi-Singer (ACM-MM 2021)**
-
-
-## Multi-modal Language Processing
-- Audio-Visual Speech-to-Speech Translation: **TranSpeech (ICLR 2023) / AV-TranSpeech (ACL 2023)**
-- Self-Supervised Learning: **Prosody-MAE (ACL 2023)**
-
+## Multi-modal Large Language Model
+- Speech Pre-training [InstructSpeech (ICML, 2024), UniAudio (ICML, 2024)]
+- Joint understanding and generation [AVLM (Technical Report, 2025), AudioGPT (AAAI, 2024)]
+- Efficient Post-training [MVoice (ACL, 2024), VoiceTuner (ACM-MM, 2024)]
+## Omini Audio Generative Models
+- Video-to-Audio Generation [Lumina-T2X (ICLR 2025), Make-An-Audio (ICML 2023)]
+- Speech Generation [GenerSpeech (NeurIPS, 2022), FastDiff (IJCAI, 2022), ProDiff (ACM-MM, 2022), FastDiff 2 (ACL, 2023)]
+- Music Generation [SingGAN (ACM-MM, 2022), Multi-Singer (ACM-MM, 2021)].
+## Audio-Visual Language Processing
+- Speech Translation [TranSpeech (ICLR, 2023), AV-TranSpeech (ACL, 2023)]
+- Self-Supervised Learning [Prosody-MAE (ACL, 2023)].
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2025</div><img src='images/seamless.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -18,7 +18,7 @@
 - [Seamless Interaction: Dyadic Audiovisual Motion Modeling and Large-Scale Dataset.](https://ai.meta.com/research/publications/seamless-interaction-dyadic-audiovisual-motion-modeling-and-large-scale-dataset/)
  <!-- **Rongjie Huang**, Mingze Li, Dongchao Yang, Jiatong Shi, Xuankai Chang, Zhenhui Ye, Yuning Wu, Zhiqing Hong, Jiawei Huang, Jinglin Liu, Yi Ren, Zhou Zhao, Shinji Watanabe. **AAAI, 2025** -->
 
-- **Academic / Industry Impact**: Our work are promoted by different media and forums, such as [Meta AI](https://ai.meta.com/blog/seamless-interaction-natural-conversational-dynamics/), [Linkedin](https://www.linkedin.com/posts/aiatmeta_today-the-meta-fair-team-is-introducing-activity-7344402971469729793-kg5s?utm_source=share&utm_medium=member_desktop&rcm=ACoAADGDrcoBfoMPrq_7hHP3yV8yEEJ24xfBDWg), and [Twitter](https://x.com/AIatMeta/status/1938641490512851290). We have code released at [![](https://img.shields.io/github/stars/facebookresearch/seamless_interaction?style=social&label=Code+Stars)](https://github.com/facebookresearch/seamless_interaction) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/datasets/facebook/seamless-interaction).
+We develop a suite of joint LLM and diffusion models (AVLM) to generate dyadic motion gestures and facial expressions aligned with human speech. The AVLM can understand and generate both speech and visual modalities. With 2D and 3D renderers, it brings us closer to interactive virtual agents. Our work are promoted by different media and forums, such as [Meta AI](https://ai.meta.com/blog/seamless-interaction-natural-conversational-dynamics/), [Linkedin](https://www.linkedin.com/posts/aiatmeta_today-the-meta-fair-team-is-introducing-activity-7344402971469729793-kg5s?utm_source=share&utm_medium=member_desktop&rcm=ACoAADGDrcoBfoMPrq_7hHP3yV8yEEJ24xfBDWg), and [Twitter](https://x.com/AIatMeta/status/1938641490512851290). We have code released at [![](https://img.shields.io/github/stars/facebookresearch/seamless_interaction?style=social&label=Code+Stars)](https://github.com/facebookresearch/seamless_interaction) [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue)](https://huggingface.co/datasets/facebook/seamless-interaction) download has yielded \textbf{30k+}.
 
 
 
