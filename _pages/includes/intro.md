@@ -1,7 +1,8 @@
-**Rongjie Huang (黄融杰)** is at final year's at College of Computer Science, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by [Prof. Zhou Zhao](https://person.zju.edu.cn/zhaozhou). I also obtained Bachelor’s degree at Zhejiang University. My research interest includes **Multi-modal Large Language Model, Video-Audio Generative Models, and Audio-Visual Language Processing**. I have published **first-author papers** at the top international AI conferences such as **NeurIPS/ICLR/ICML/ACL/IJCAI**. I developed a few well-known Speech/NLP algorithms including:
-- Seamless-Interaction, AudioGPT, UniAudio, Make-A-Voice: Multimodal, Multilingual LLMs
-- Make-An-Audio, FastDiff, GenerSpeech: Omini-modal Audio Generative Models
-- TranSpeech, and AV-TranSpeech: Multimodal Translation
+**Rongjie Huang (黄融杰)** is at **Seamless Team** (https://ai.meta.com/research/seamless-communication/) at **FAIR**. Previously, I graduated from College of Computer Science, [Zhejiang University](https://www.zju.edu.cn/english/), supervised by [Prof. Zhou Zhao](https://person.zju.edu.cn/zhaozhou). I also obtained Bachelor’s degree at Zhejiang University. My research interest includes **Multi-modal Large Language Model, Video-Audio Generative Models, and Audio-Visual Language Processing**. I have published **first-author papers** at the top international AI conferences such as **NeurIPS/ICLR/ICML/ACL/IJCAI**. I developed a few well-known Speech/NLP algorithms including:
+
+- **Multimodal LLMs** [Seamless-Interaction](https://ai.meta.com/blog/seamless-interaction-natural-conversational-dynamics/), [AudioGPT](https://github.com/AIGC-Audio/AudioGPT), [UniAudio](https://arxiv.org/abs/2310.00704), [Make-A-Voice](https://arxiv.org/abs/2305.19269)
+- **Omini-modal Audio Generative Models**: [Make-An-Audio](https://github.com/Text-to-Audio/Make-An-Audio), [Make-An-Audio-2](https://github.com/bytedance/Make-An-Audio-2), [FastDiff](https://github.com/Rongjiehuang/FastDiff), [GenerSpeech](https://openreview.net/pdf?id=dmCyoqxEwHf)
+- **Multimodal Translation**: [TranSpeech](https://arxiv.org/abs/2205.12523), and [AV-TranSpeech](https://arxiv.org/abs/2305.15403)
 
 
 <!-- During my graduate study, I was lucky to collaborate with the CMU Speech Team led by [Prof. Shinji Watanabe](https://scholar.google.com/citations?user=U5xRA6QAAAAJ), and Audio Research Team at Zhejiang University.  -->
