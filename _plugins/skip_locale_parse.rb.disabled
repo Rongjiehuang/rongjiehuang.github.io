@@ -1,0 +1,21 @@
+# _plugins/skip_locale_parse.rb
+require 'jekyll/liquid_renderer/file'
+
+class Jekyll::LiquidRenderer::File
+  # 先保留原来的 parse
+  alias_method :original_parse, :parse
+
+  # 接受任意数量的参数
+  def parse(*args)
+    content, info = args
+
+    # 如果调用时 info 存在，并且路径指向你自己的 _data/locales/*.yml
+    if info.is_a?(Hash) && info[:relative_path] =~ %r{^_data/locales/.*\.ya?ml$}
+      # 只返回原始文本，不做 Liquid 渲染
+      content
+    else
+      # 参数不变地交给原方法
+      original_parse(*args)
+    end
+  end
+end
