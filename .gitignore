@@ -4,3 +4,8 @@ push.sh
 Gemfile.lock
 run_server.sh
 .ruby-version
+gems/
+.bundle/
+vendor/
+node_modules/
+

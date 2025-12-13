@@ -92,6 +92,10 @@ exclude:
   - tmp
   - vendor
   - about.md
+  - gems
+  - .bundle
+  - vendor
+  - node_modules
 
 keep_files:
   - .git
