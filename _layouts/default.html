@@ -1,33 +1,120 @@
----
-layout: compress
----
+<section class="page__content" itemprop="text">
+  <!-- Normal content (daytime) -->
+  <div id="normal-content">
+    {{ content }}
+  </div>
 
-<!doctype html>
-<html lang="en" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
-
-  <body>
-
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
-
-    <div id="main" role="main">
-      {% include sidebar.html %}
-    
-      <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-        {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
-        <div class="page__inner-wrap">
-          <section class="page__content" itemprop="text">
-            {{ content }}
-          </section>
-        </div>
-      </article>
+  <div id="night-error" style="display:none;">
+    <div class="gh-flash" role="alert" aria-live="polite">
+      <div class="gh-flash__title">here is the error in Github Displaying API</div>
+      <div class="gh-flash__desc">
+        The content renderer failed while calling GitHub API. Below is the raw response.
+      </div>
+      <div class="gh-flash__hint">
+        Source: <span class="gh-mono">https://api.github.com/graphql</span>
+      </div>
+      <pre id="gh-api-payload" class="gh-flash__payload">Loading…</pre>
+      <button class="gh-flash__btn" type="button" onclick="window.location.reload()">Reload</button>
     </div>
+  </div>
 
-    {% include scripts.html %}
+  <style>
+    .gh-flash{
+      border:1px solid #ffd7d5; background:#ffebe9; color:#24292f;
+      border-radius:12px; padding:18px 18px 14px;
+      max-width: 920px; margin: 24px auto;
+      box-shadow: 0 1px 2px rgba(31,35,40,.08);
+    }
+    .gh-flash__title{ font-weight:700; font-size:20px; margin-bottom:6px; }
+    .gh-flash__desc{ margin:0 0 10px; }
+    .gh-flash__hint{ font-size:12px; opacity:.8; margin: 6px 0 10px; }
+    .gh-mono{ font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    .gh-flash__payload{
+      background:#fff; border:1px solid #d0d7de; border-radius:10px;
+      padding:12px; overflow:auto; max-height: 42vh; margin: 0 0 12px;
+      font-size: 12px; line-height: 1.4;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    .gh-flash__btn{
+      background:#f6f8fa; border:1px solid #d0d7de; border-radius:10px;
+      padding:8px 12px; cursor:pointer; font-weight:600;
+    }
+  </style>
 
-  </body>
-</html>
+  <script>
+    function getChinaHour() {
+      const now = new Date();
+      try {
+        const parts = new Intl.DateTimeFormat('en-US', {
+          timeZone: 'Asia/Shanghai',
+          hour: 'numeric',
+          hour12: false
+        }).formatToParts(now);
+        const h = parts.find(p => p.type === 'hour')?.value;
+        return parseInt(h, 10);
+      } catch {
+        // fallback: UTC + 8
+        return (now.getUTCHours() + 8) % 24;
+      }
+    }
+
+    async function loadGithubApiError() {
+      const pre = document.getElementById('gh-api-payload');
+      if (!pre || pre.dataset.loaded === '1') return;
+      pre.dataset.loaded = '1';
+
+      const reqId = Math.random().toString(16).slice(2);
+      const stamp = new Date().toISOString();
+      const url = 'https://api.github.com/graphql';
+
+      try {
+        const res = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: '{ viewer { login } }' })
+        });
+
+        let payload = null;
+        try { payload = await res.json(); } catch (_) {}
+
+        pre.textContent = JSON.stringify({
+          request_id: reqId,
+          timestamp: stamp,
+          source: url,
+          http_status: res.status,
+          response: payload ?? { message: res.statusText || 'Unknown error' }
+        }, null, 2);
+      } catch (e) {
+        pre.textContent = JSON.stringify({
+          request_id: reqId,
+          timestamp: stamp,
+          source: url,
+          http_status: 0,
+          response: { message: String(e) }
+        }, null, 2);
+      }
+    }
+
+    function toggleByChinaTime() {
+      const hour = getChinaHour();
+      const isNight = (hour >= 22 || hour < 8);
+
+      const normal = document.getElementById('normal-content');
+      const err = document.getElementById('night-error');
+
+      if (!normal || !err) return;
+
+      if (isNight) {
+        normal.style.display = 'none';
+        err.style.display = '';
+        loadGithubApiError();
+      } else {
+        err.style.display = 'none';
+        normal.style.display = '';
+      }
+    }
+    
+    toggleByChinaTime();
+    setInterval(toggleByChinaTime, 60 * 1000);
+  </script>
+</section>
