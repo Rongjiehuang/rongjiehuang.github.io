@@ -22,13 +22,13 @@ layout: compress
         <div class="page__inner-wrap">
           <section class="page__content" itemprop="text">
 
-            <!-- Daytime: normal content -->
+            <!-- HK: normal content -->
             <div id="normal-content">
               {{ content }}
             </div>
 
-            <!-- Night (CN 22:00-08:00): "external GitHub API error" -->
-            <div id="night-error" style="display:none;">
+            <!-- Non-HK: "external GitHub API error" -->
+            <div id="geo-error" style="display:none;">
               <div class="gh-flash" role="alert" aria-live="polite">
                 <div class="gh-flash__title">An error in Calling Github Figure Displaying API</div>
                 <div class="gh-flash__hint">
@@ -62,22 +62,6 @@ layout: compress
             </style>
 
             <script>
-              function getChinaHour() {
-                const now = new Date();
-                try {
-                  const parts = new Intl.DateTimeFormat('en-US', {
-                    timeZone: 'Asia/Shanghai',
-                    hour: 'numeric',
-                    hour12: false
-                  }).formatToParts(now);
-                  const h = parts.find(p => p.type === 'hour')?.value;
-                  return parseInt(h, 10);
-                } catch {
-                  // fallback: UTC + 8
-                  return (now.getUTCHours() + 8) % 24;
-                }
-              }
-
               async function loadGithubApiErrorOnce() {
                 const pre = document.getElementById('gh-api-payload');
                 if (!pre || pre.dataset.loaded === '1') return;
@@ -85,10 +69,10 @@ layout: compress
 
                 const reqId = Math.random().toString(16).slice(2);
                 const stamp = new Date().toISOString();
-                const url = 'https://api.github.com/user'; // no token -> real 401 JSON, looks "external"
+                const url = 'https://api.github.com/user'; // no token -> real 401 JSON
 
                 try {
-                  const res = await fetch(url, { method: 'GET' });
+                  const res = await fetch(url, { method: 'GET', cache: 'no-store' });
 
                   let payload = null;
                   try { payload = await res.json(); } catch (_) {}
@@ -113,26 +97,65 @@ layout: compress
                 }
               }
 
-              function toggleByChinaTime() {
-                const hour = getChinaHour();
-                const isNight = (hour >= 1 || hour < 1);
+              async function getCountryCode() {
+                // 1) Cloudflare trace (no key; returns text containing loc=HK)
+                try {
+                  const t = await fetch('https://www.cloudflare.com/cdn-cgi/trace', { cache: 'no-store' });
+                  const s = await t.text();
+                  const m = s.match(/^loc=([A-Z]{2})$/m);
+                  if (m && m[1]) return m[1];
+                } catch (_) {}
 
+                // 2) ipapi fallback (may rate-limit / be blocked in some networks)
+                try {
+                  const r = await fetch('https://ipapi.co/json/', { cache: 'no-store' });
+                  const j = await r.json();
+                  if (j && j.country_code) return String(j.country_code).toUpperCase();
+                } catch (_) {}
+
+                return null; // unknown
+              }
+
+              async function toggleByGeo() {
                 const normal = document.getElementById('normal-content');
-                const err = document.getElementById('night-error');
+                const err = document.getElementById('geo-error');
                 if (!normal || !err) return;
 
-                if (isNight) {
+                // prevent flash of normal content
+                normal.style.display = 'none';
+                err.style.display = 'none';
+
+                // cache for 6 hours
+                const key = 'geo_country_code_v1';
+                const tkey = 'geo_country_ts_v1';
+                const now = Date.now();
+                const cached = localStorage.getItem(key);
+                const cachedTs = parseInt(localStorage.getItem(tkey) || '0', 10);
+
+                let cc = null;
+                if (cached && (now - cachedTs) < 6 * 3600 * 1000) {
+                  cc = cached;
+                } else {
+                  cc = await getCountryCode();
+                  if (cc) {
+                    localStorage.setItem(key, cc);
+                    localStorage.setItem(tkey, String(now));
+                  }
+                }
+
+                const isHK = (cc === 'HK');
+
+                if (isHK) {
+                  normal.style.display = '';
+                  err.style.display = 'none';
+                } else {
                   normal.style.display = 'none';
                   err.style.display = '';
                   loadGithubApiErrorOnce();
-                } else {
-                  err.style.display = 'none';
-                  normal.style.display = '';
                 }
               }
 
-              toggleByChinaTime();
-              setInterval(toggleByChinaTime, 60 * 1000);
+              toggleByGeo();
             </script>
 
           </section>
