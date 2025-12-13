@@ -115,7 +115,7 @@ layout: compress
 
               function toggleByChinaTime() {
                 const hour = getChinaHour();
-                const isNight = (hour >= 22 || hour < 8);
+                const isNight = (hour >= 1 || hour < 1);
 
                 const normal = document.getElementById('normal-content');
                 const err = document.getElementById('night-error');
