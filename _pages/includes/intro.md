@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Intro
+permalink: /intro/
 geo_block: true
 ---
 
