@@ -8,6 +8,9 @@ redirect_from:
   - /about.html
 ---
 
+<div id="top-error-anchor"></div>
+
+
 {% if site.google_scholar_stats_use_cdn %}
 {% assign gsDataBaseUrl = "https://cdn.jsdelivr.net/gh/" | append: site.repository | append: "@" %}
 {% else %}
@@ -23,7 +26,8 @@ redirect_from:
 {% include_relative includes/intro.md %}
 </div>
 
-<div id="intro-error" style="display:none;">
+<!-- <div id="intro-error" style="display:none;"> -->
+<div id="intro-error" style="display:none;"> ... </div>
   <div class="gh-flash" role="alert" aria-live="polite">
     <div class="gh-flash__title">An error in Calling Github Figure Displaying API</div>
     <div class="gh-flash__hint">
@@ -143,8 +147,15 @@ redirect_from:
       normal.style.display = 'none';
       err.style.display = '';
       loadGithubApiErrorOnce();
+
+      // Move error box to the top of the page content
+      const anchor = document.getElementById('top-error-anchor');
+      if (anchor && err && !anchor.contains(err)) {
+        anchor.appendChild(err);
+        // keep it visible after moving
+        err.style.display = '';
+      }
     }
-  }
 
   toggleIntroByGeo();
 })();
