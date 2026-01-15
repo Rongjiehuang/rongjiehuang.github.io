@@ -29,12 +29,12 @@ We develop a suite of **joint LLM and diffusion models (AVLM)** to generate dyad
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025, NeurIPS 2024</div><img src='images/make-an-audio-arch.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025, NeurIPS 2024</div><img src='images/lumina.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- [Lumina-Next: Making Lumina-T2X Stronger and Faster with Next-DiT.]() Le Zhuo*, Ruoyi Du*, Dongyang Liu*, **Rongjie Huang***, Wenze Liu*, Lirui Zhao, Fu-Yun Wang, Zhanyu Ma, Xu Luo, Zehan Wang, Kaipeng Zhang, Xiangyang Zhu, Si Liu, Xiangyu Yue, Dingning Liu, Wanli Ouyang, Ziwei Liu, Yu Qiao, Hongsheng Li, Peng Gao. **ICLR, 2025**
+- [Lumina-Next: Making Lumina-T2X Stronger and Faster with Next-DiT.]() Le Zhuo✳️*, Ruoyi Du✳️*, Dongyang Liu✳️*, **Rongjie Huang✳️**, Wenze Liu✳️, Lirui Zhao, Fu-Yun Wang, Zhanyu Ma, Xu Luo, Zehan Wang, Kaipeng Zhang, Xiangyang Zhu, Si Liu, Xiangyu Yue, Dingning Liu, Wanli Ouyang, Ziwei Liu, Yu Qiao, Hongsheng Li, Peng Gao. **ICLR, 2025**
 
-- **Academic / Industry Impact**: Lumina-Next showcase strong generation performance with increased training and inference efficiency with MMDiT. To enable resolution extrapolation, we propose Frequency and Time-Aware Scaled RoPE tailored for diffusion transformers. The model presents SOTA in **audio and music generation**, showcasing strong performance across these domains. We have **code released** at [![](https://img.shields.io/github/stars/Alpha-VLLM/Lumina-T2X?style=social&label=Code+Stars)](https://github.com/Alpha-VLLM/Lumina-T2X), code integrated in **Diffusers** [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue)]().
+- **Lumina-Next, and Lumina** showcase strong **Image, Audio, 3D generation** performance with increased training and inference efficiency with MMDiT. I am the POC and Core Contributor for **audio and music generation**, showcasing strong performance across benchmarks and domains. We have **code released** at [![](https://img.shields.io/github/stars/Alpha-VLLM/Lumina-T2X?style=social&label=Code+Stars)](https://github.com/Alpha-VLLM/Lumina-T2X), code integrated in **Diffusers** [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue)]().
 </div>
 </div>
 
@@ -69,7 +69,7 @@ One of our **continuous efforts to reduce communication barrier**, and we have f
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/generspeech.png' alt="sym" width="100%"></div></div>
+<!-- <div class='paper-box'><div class='paper-box-image'><div><div class="badge">NeurIPS 2022</div><img src='images/generspeech.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 - [GenerSpeech: Towards Style Transfer for Generalizable Out-Of-Domain Text-to-Speech.](https://arxiv.org/abs/2205.07211) **Rongjie Huang**, Yi Ren, Jinglin Liu, Chenye Cui, and Zhou Zhao. **NeurIPS, 2022. New Orleans, USA**
@@ -78,7 +78,7 @@ The first **zero-shot** TTS generalizable to unseen speaker, emotion, and prosod
 
 
 </div>
-</div>
+</div> -->
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICJAI 2022</div><img src='images/fastdiff.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
