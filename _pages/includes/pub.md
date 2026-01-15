@@ -32,7 +32,7 @@ We develop a suite of **joint LLM and diffusion models (AVLM)** to generate dyad
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025, NeurIPS 2024</div><img src='images/lumina.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-- [Lumina-Next: Making Lumina-T2X Stronger and Faster with Next-DiT.]() Le Zhuo✳️*, Ruoyi Du✳️*, Dongyang Liu✳️*, **Rongjie Huang✳️**, Wenze Liu✳️, Lirui Zhao, Fu-Yun Wang, Zhanyu Ma, Xu Luo, Zehan Wang, Kaipeng Zhang, Xiangyang Zhu, Si Liu, Xiangyu Yue, Dingning Liu, Wanli Ouyang, Ziwei Liu, Yu Qiao, Hongsheng Li, Peng Gao. **ICLR, 2025**
+- [Lumina-Next: Making Lumina-T2X Stronger and Faster with Next-DiT.]() Le Zhuo*, Ruoyi Du*, Dongyang Liu*, **Rongjie Huang**, Wenze Liu*, Lirui Zhao, Fu-Yun Wang, Zhanyu Ma, Xu Luo, Zehan Wang, Kaipeng Zhang, Xiangyang Zhu, Si Liu, Xiangyu Yue, Dingning Liu, Wanli Ouyang, Ziwei Liu, Yu Qiao, Hongsheng Li, Peng Gao. **ICLR, 2025**
 
 - **Lumina-Next, and Lumina** showcase strong **Image, Audio, 3D generation** performance with increased training and inference efficiency with MMDiT. I am the POC and Core Contributor for **audio and music generation**, showcasing strong performance across benchmarks and domains. We have **code released** at [![](https://img.shields.io/github/stars/Alpha-VLLM/Lumina-T2X?style=social&label=Code+Stars)](https://github.com/Alpha-VLLM/Lumina-T2X), code integrated in **Diffusers** [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue)]().
 </div>
