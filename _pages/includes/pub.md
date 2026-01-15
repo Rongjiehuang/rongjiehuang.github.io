@@ -29,6 +29,15 @@ We develop a suite of **joint LLM and diffusion models (AVLM)** to generate dyad
 </div>
 </div>
 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2025, NeurIPS 2024</div><img src='images/make-an-audio-arch.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+- [Lumina-Next: Making Lumina-T2X Stronger and Faster with Next-DiT.]() Le Zhuo*, Ruoyi Du*, Dongyang Liu*, **Rongjie Huang***, Wenze Liu*, Lirui Zhao, Fu-Yun Wang, Zhanyu Ma, Xu Luo, Zehan Wang, Kaipeng Zhang, Xiangyang Zhu, Si Liu, Xiangyu Yue, Dingning Liu, Wanli Ouyang, Ziwei Liu, Yu Qiao, Hongsheng Li, Peng Gao. **ICLR, 2025**
+
+- **Academic / Industry Impact**: Lumina-Next showcase strong generation performance with increased training and inference efficiency with MMDiT. To enable resolution extrapolation, we propose Frequency and Time-Aware Scaled RoPE tailored for diffusion transformers. The model presents SOTA in **audio and music generation**, showcasing strong performance across these domains. We have **code released** at [![](https://img.shields.io/github/stars/Alpha-VLLM/Lumina-T2X?style=social&label=Code+Stars)](https://github.com/Alpha-VLLM/Lumina-T2X), code integrated in **Diffusers** [![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-blue)]().
+</div>
+</div>
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">AAAI 2024</div><img src='images/make-an-audio-arch.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -45,7 +54,7 @@ We develop a suite of **joint LLM and diffusion models (AVLM)** to generate dyad
 
 - [Make-An-Audio: Text-To-Audio Generation with Prompt-Enhanced Diffusion Models.]() **Rongjie Huang**, Jiawei Huang, Dongchao Yang, Yi Ren, Mingze Li, Zhenhui Ye, Jinglin Liu, Xiang Yin, Zhou Zhao. **ICML, 2023. Hawaii, USA**
 
-- **Academic / Industry Impact**: Our work are promoted by different media and forums, such as [Heart of Machine](https://mp.weixin.qq.com/s/fphIJ13RWRIgGNTwYO06bw), [ByteDance](https://zhuanlan.zhihu.com/p/605228032), and [Twitter](https://twitter.com/_akhaliq/status/1619589070329348096). Code is coming!
+- **Academic / Industry Impact**: Our work are promoted by different media and forums, such as [Heart of Machine](https://mp.weixin.qq.com/s/fphIJ13RWRIgGNTwYO06bw), [ByteDance](https://zhuanlan.zhihu.com/p/605228032), and [Twitter](https://twitter.com/_akhaliq/status/1619589070329348096). 
 
 </div>
 </div>
@@ -87,7 +96,9 @@ One of our **continuous efforts in generative modeling**, and we have follow-up 
 # 2025
 - [OmniSep: Unified Omni-modal Sound Separation.]() Xize Cheng, Zehan Wang, Ziang Zhang, **Rongjie Huang**, Jialung Zuo, Shengpeng Ji, Ziyang Ma, Siqi Zheng, Tao Jin, Zhou Zhao. **ICLR, 2025**
 
-- [Lumina-T2X: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers.]() Peng Gao, Le Zhuo, Dongyang Liu, Ruoyi Du, Xu Luo, Longtian Qiu, Yuhang Zhang, **Rongjie Huang**, Shijie Geng, Renrui Zhang, Junlin Xie, Wenqi Shao, Zhengkai Jiang, Tianshuo Yang, Weicai Ye. **ICLR, 2025**
+- [Lumina-Next: Making Lumina-T2X Stronger and Faster with Next-DiT.]() Le Zhuo*, Ruoyi Du*, Dongyang Liu*, **Rongjie Huang***, Wenze Liu*, Lirui Zhao, Fu-Yun Wang, Zhanyu Ma, Xu Luo, Zehan Wang, Kaipeng Zhang, Xiangyang Zhu, Si Liu, Xiangyu Yue, Dingning Liu, Wanli Ouyang, Ziwei Liu, Yu Qiao, Hongsheng Li, Peng Gao. **ICLR, 2025**
+
+- [Lumina-T2X: Transforming Text into Any Modality, Resolution, and Duration via Flow-based Large Diffusion Transformers.]() Peng Gao, Le Zhuo, Dongyang Liu, Ruoyi Du, Xu Luo, Longtian Qiu, Yuhang Zhang, **Rongjie Huang**, Shijie Geng, Renrui Zhang, Junlin Xie, Wenqi Shao, Zhengkai Jiang, Tianshuo Yang, Weicai Ye. **NeurIPS, 2024**
 
 - [GeneFace++: Generalized and Stable Real-Time Audio-Driven 3D Talking Face Generation.]() Zhenhui Ye, Jinzheng He, Ziyue Jiang, **Rongjie Huang**, Jiawei Huang, Jinglin Liu, Yi Ren, Xiang Yin, Zejun MA, Zhou Zhao. **ICLR, 2025**
 
